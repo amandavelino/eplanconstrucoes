@@ -1,0 +1,120 @@
+.hd-tp 
+{
+    background: $colorDestaque;
+    width: 100%;
+    padding: 10px 0;
+
+    *
+    {
+        color: $secondaryColor;
+    }
+
+    i 
+    {
+        margin-right: 5px;
+    }
+
+    p 
+    {
+        font-family: $secondaryFont;
+        font-weight: $fontWeightSemiBold;
+        line-height: 1em;
+        margin: 0;
+    }
+
+}
+
+.hd-md
+{
+    border-bottom: 1px solid $primaryColor;
+    padding: 30px 0;
+
+    a 
+    {
+        display: block;
+    }
+
+    .logo 
+    {
+        width: 195px;
+        height: 80px;
+    }
+
+    .box-info-contato
+    {
+        width: 200px;
+        padding-top: 10px;
+
+        .fa-phone 
+        {
+            font-size: $fontSizeBase * 6;
+            float: left;
+            margin-right: 15px;
+        }
+
+        h4 
+        {
+            font-family: $secondaryFont;
+            font-size: $fontSizeBase * 1.7;
+            margin: 0;
+            padding: 0;
+        }
+
+        h3 
+        {
+            font-family: $secondaryFont;
+            font-size: $fontSizeBase * 2.5;
+            font-weight: $fontWeightSemiBold;
+            margin: 0;
+            padding: 0;
+        }
+
+    }
+
+}
+
+.hd-ft
+{
+
+    nav 
+    {
+        float: left;
+        margin: 0 -45px;
+
+        ul 
+        {
+            overflow: hidden;
+            margin: 0;
+            padding: 0;
+        }
+
+        li 
+        {
+            float: left;
+            margin: 0 30px;
+            list-style: none;
+        }
+
+        a 
+        {
+            color: $primaryColor;
+            display: block;
+            font-family: $secondaryFont;
+            font-size: $fontSizeBase * 1.7;
+            font-weight: $fontWeightSemiBold;
+            line-height: 1.2em;
+            padding: 15px;
+            transition: $transitionAll;
+
+            &:hover,
+            &:focus,
+            &.active 
+            {
+                color: $colorDestaque;
+            }
+
+        }        
+
+    }
+    
+}

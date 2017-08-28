@@ -1,0 +1,41 @@
+/*
+    font-family: 'Lato', sans-serif;
+    font-family: 'Lora', serif;
+    font-weight: 400/700/900
+*/
+ 
+$colorDestaque: #f48245;
+
+//Background Colors
+$bgColorPrimary: $colorDestaque;
+
+//Cores
+$primaryColor: #111;  
+$secondaryColor: #fff;
+
+//Fontes  
+$fontSizeBase: 10px;
+$fontWeightNormal: 400;
+$fontWeightSemiBold: 700;
+$fontWeightBold: 900;
+
+$primaryFont: 'Lora', Arial, Tahoma, serif;
+$secondaryFont: 'Lato', Arial, Tahoma, serif;
+
+//Transitions
+$transitionAll: all .5s ease-in-out;
+
+//Media Queries
+
+    //Desktops
+    $largeDesktop: 1200px; // > 1200px
+    $smallDesktop: 992px 1199px; // entre 1200px e 992px 
+    $allDesktop: 992px; // > 992px
+
+    //Tablets
+    $tablet: 768px 991px; //tablets portrait: 
+
+    //Celular
+    $allCelular: 0 767px; // todos os dispositivos móveis < 768px
+    $largeCelular: 481 767px;
+    $smallCelular: 0 480px; 

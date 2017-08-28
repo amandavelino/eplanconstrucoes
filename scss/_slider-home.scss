@@ -1,0 +1,108 @@
+.ss-slider-home
+{
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+
+    .legenda 
+    {
+        width: 100%;
+        position: absolute;
+        bottom: 10%;
+        left: 0;
+        z-index: 20;
+
+        h2 
+        {
+            color: $primaryColor;
+            font-size: $fontSizeBase * 5.5;
+            font-weight: $fontWeightBold;
+            line-height: 1.2em;
+        }
+
+        .ss-limit
+        {
+            width: 450px;
+            max-width: 100%;
+        }
+
+    }
+
+    .owl-home
+    {
+
+        .owl-nav
+        {
+            width: 970px;
+            margin: -88px auto 0;
+            position: relative;
+            overflow: hidden;
+            height: 30px;
+            padding: 40px 0;
+            z-index: 10;
+            bottom: 0;
+        }
+
+        .owl-next, .owl-prev 
+        {
+            position: absolute;
+            top: 50%;
+            margin-top: -15px;
+        }
+
+        .owl-next 
+        {
+            right: 0;
+        }
+
+        .owl-prev 
+        {
+            left: 0;
+        }
+
+        .owl-dots 
+        {
+            position: relative;
+            text-align: center;
+            width: 910px;
+            margin: -40px auto 0;
+            z-index: 9999;
+            height: 40px;
+
+            .owl-dot 
+            {
+                display: inline-block;
+                zoom: 1;
+
+                span 
+                {
+                    background: #4e4d4d;
+                    //color: $bgHeaderItem;
+                    display: block;
+                    font-size: $fontSizeBase * 1.5;
+                    width: 100px;
+                    height: 4px;
+                    margin: 5px;
+                    padding: 2px 0;
+                    opacity: .7;
+                    transition: opacity .2s ease;    
+                }
+
+                &.active,
+                &:hover
+                {
+                    span 
+                    {
+                        opacity: 1; 
+                    }
+                }
+
+            }
+        }
+
+    }
+
+}

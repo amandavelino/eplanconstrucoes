@@ -1,0 +1,46 @@
+*
+{
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;    
+}
+
+body 
+{
+    color: $primaryColor;
+    font-family: $primaryFont;
+    font-size: $fontSizeBase;
+    font-weight: $fontWeightNormal;
+}
+
+img 
+{
+    display: inline-block; 
+    margin-bottom: 0;
+}
+
+a,
+a:hover,
+a:focus 
+{
+    text-decoration: none;
+}
+
+p  
+{
+    font-size: $fontSizeBase * 1.5;
+    font-weight: $fontWeightNormal;
+    line-height: 1.5em;
+    margin: 0 0 $fontSizeBase 0;
+}
+
+/* Classes em geral...  */
+
+.left 
+{
+    float: left;
+}
+
+.right
+{
+    float: right;
+}

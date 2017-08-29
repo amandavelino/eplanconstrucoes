@@ -8,7 +8,7 @@ body
 {
     color: $primaryColor;
     font-family: $primaryFont;
-    font-size: $fontSizeBase;
+    font-size: $fontSizeBase * 1.6;
     font-weight: $fontWeightNormal;
 }
 
@@ -27,20 +27,155 @@ a:focus
 
 p  
 {
-    font-size: $fontSizeBase * 1.5;
+    font-size: $fontSizeBase * 1.6;
     font-weight: $fontWeightNormal;
-    line-height: 1.5em;
-    margin: 0 0 $fontSizeBase 0;
+    line-height: 1.7em;
+    margin: 0 0 30px 0;
 }
 
-/* Classes em geral...  */
+//Classes em Geral
 
-.left 
-{
-    float: left;
-}
+    .btn 
+    {
+        border: 3px solid transparent;
+        color: $colorDestaque;
+        display: inline-block;
+        font-family: $secondaryFont;
+        font-size: $fontSizeBase * 2.3;
+        font-weight: $fontWeightSemiBold;
+        line-height: 1em;
+        padding: 10px 50px;
+        text-align: center;
+        margin: 0 auto;
+        outline: none;
+        transition: $transitionAll;
 
-.right
-{
-    float: right;
-}
+        &.btn-no-bg 
+        {
+            border: 3px solid $colorDestaque;
+            font-size: $fontSizeBase * 1.8;
+
+            &:hover,
+            &:focus 
+            {
+                background: $colorDestaque;
+                color: $secondaryColor;
+            }
+
+        }
+
+        &.btn-bg 
+        {
+            background: $colorDestaque;
+            color: $secondaryColor;
+
+            &:hover,
+            &:focus 
+            {
+                background: $primaryColor;
+                color: $secondaryColor;
+            }
+
+        }
+
+        &.btn-submit
+        {
+            background: $primaryColor;
+            color: $secondaryColor;
+            font-size: $fontSizeBase * 1.6;
+            float: right;
+            padding: 10px 20px;
+        }
+
+    }
+
+    .left 
+    {
+        float: left;
+    }
+
+    .right
+    {
+        float: right;
+    }
+
+//Classes Internas
+
+    .sessao 
+    {
+        position: relative;
+        padding: 30px 0 0;
+        overflow: hidden;
+    }
+
+    .ss-header
+    {
+        padding: 20px 0 40px;
+        text-align: center;
+        position: relative;
+
+        h2 
+        {
+            font-family: $secondaryFont;
+            font-weight: $fontWeightSemiBold;
+            font-size: $fontSizeBase * 3;
+            line-height: 1.8em;
+            margin: 0;
+            padding: 0;
+            position: relative;
+
+            &::after 
+            {
+                content: "";
+                background: $colorDestaque;
+                width: 100px;
+                height: 4px;
+                margin: 0 auto;
+                position: absolute;
+                left: 50%;
+                bottom: 0;
+                margin-left: -50px;
+            }
+
+        }
+
+    }
+
+    .ss-center 
+    {
+        text-align: center;
+    }
+
+    .ss-ct
+    {
+        @include make-row();
+    }
+
+    .ss-box 
+    {
+        img 
+        {
+            max-width: 100%;
+        }
+    }
+
+    .lista-itens 
+    {
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+
+        li 
+        {
+            float: left;
+            margin: 30px;
+            list-style: none;
+        
+            //centralizando verticalmente
+            height: 100px; //adicionar um height
+            display: flex;
+            align-items: center;
+            justify-content: center;        
+        }
+
+    }

@@ -1,0 +1,105 @@
+#ft-principal
+{
+
+    background: $colorDestaque;
+    padding: 50px 0;
+
+    * 
+    {
+        color: $secondaryColor;
+    }
+
+    .fa 
+    {
+        font-size: $fontSizeBase * 1.6;
+        margin-right: 20px;
+    }
+    
+    .fa-map-marker,
+    .fa-phone
+    {
+        font-size: $fontSizeBase * 2.5;
+    }
+
+}
+
+.ss-footer-box
+{
+    @include make-lg-column(4);
+    padding-top: 100px;
+
+    header 
+    {
+        padding: 20px 0;
+        margin-top: -68px;
+
+        h4 
+        {
+            font-family: $secondaryFont;
+            font-size: $fontSizeBase * 2.4;
+            line-height: 1.2em;
+            margin: 0;
+            padding: 0;
+        }
+    }
+}
+
+.lista-info
+{
+    text-align: left;
+    margin: 0;
+    padding: 0;
+    
+    li 
+    {
+        line-height: 1.8em;
+        float: none;
+        text-align: left;
+        list-style: none;
+        margin-bottom: 20px;
+    }
+}
+
+.img-ft 
+{
+    position: absolute;
+    top: 0;
+}
+
+//Formulario
+
+.form-footer 
+{
+    margin: 0;
+    padding: 0;
+    position: relative;
+    
+    label
+    {
+        display: block;
+        margin-bottom: 20px;
+
+        p 
+        {
+            color: $secondaryColor;
+            font-family: $secondaryFont;
+            font-weight: $fontWeightSemiBold;
+            font-size: $fontSizeBase * 1.6;
+            line-height: 1.2em;
+            margin: 0 0 5px 0;
+            padding: 0;
+        }
+
+        .input 
+        {
+            border: 0 none;
+            font-family: $primaryFont;
+            font-size: $fontSizeBase * 1.4;
+            outline: none;
+            padding: 8px 10px;
+            width: 100%;
+        }
+
+    }
+
+}

@@ -1,4 +1,4 @@
-<header id="principal">
+<header id="hd-principal">
 
     <div class="hd-tp">
 

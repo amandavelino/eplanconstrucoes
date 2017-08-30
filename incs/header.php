@@ -61,7 +61,7 @@
                         <a href="nossa-empresa.php">Nossa Empresa</a>
                     </li> 
                     <li>
-                        <a href="portfolio.php">Portfólio</a>
+                        <a href="nosso-portfolio.php">Portfólio</a>
                     </li> 
                     <li>
                         <a href="contato.php">Contato</a>

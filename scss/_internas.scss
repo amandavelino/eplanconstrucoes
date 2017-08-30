@@ -36,6 +36,31 @@
             }
         }
 
+        h3 
+        {
+            font-family: $secondaryFont;
+            font-weight: $fontWeightSemiBold;
+            font-size: $fontSizeBase * 2.4;
+            line-height: 1.8em;
+            margin: 0;
+            padding: 0;
+            position: relative;
+
+            &::after 
+            {
+                content: "";
+                background: $colorDestaque;
+                width: 100px;
+                height: 4px;
+                margin: 0 auto;
+                position: absolute;
+                left: 0;
+                bottom: 0;
+                margin-left: 0;
+            }
+
+        }           
+
     }
 
     .ss-box-ct 
@@ -61,10 +86,61 @@
 
 .pg-nossa-empresa
 {
-
     .hd-internas
     {
         background: url("../imgs/bg-nossa-empresa.jpg") no-repeat center center;
+    }
+}
+
+//Nosso Portfólio
+
+.pg-nosso-portfolio
+{
+    .hd-internas
+    {
+        background: url("../imgs/bg-nosso-portfolio.jpg") no-repeat center center;
+    }
+}
+
+.ss-albuns
+{
+    overflow: hidden;
+    margin-bottom: 40px;
+
+    .ss-album 
+    {
+        overflow: hidden;
+        position: relative;
+        margin: 0 0 40px;
+
+        .ss-header 
+        {
+            padding: 0 0 30px;
+    
+        }
+    }
+}
+
+.ss-galeria 
+{
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+
+    .ss-item 
+    {
+        float: left;
+        width: 24.65%;
+        padding: 0;
+        margin: 2px;
+        //margin-bottom: 4px;
+        list-style: none;
+
+        img 
+        {
+            max-width: 100%;
+        }
+
     }
 
 }

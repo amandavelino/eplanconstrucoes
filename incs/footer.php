@@ -52,7 +52,25 @@
                 </form>
 
             </div>
-            <!-- ss-footer-box -->            
+            <!-- ss-footer-box -->  
+            
+            <div class="sub-footer">
+
+                <div class="ss-left">
+                    <p>2017 © Donec sem augue, feugiat - LTDA <br>CNPJ: 11.000.999/0001-99</p>
+                </div>
+                <!-- ss-left -->
+
+                <div class="ss-right madeBy">
+                    <p>Desenvolvido por</p>
+                    <a href="#" target="_blank" title="Desenvolvido por W2D Comunicação">
+                        <img src="./imgs/w2d.svg" width="55" border="0">
+                    </a>
+                </div>
+                <!-- ss-right -->    
+
+            </div>
+            <!-- sub-footer -->
 
         </div>
         <!-- ss-ct -->

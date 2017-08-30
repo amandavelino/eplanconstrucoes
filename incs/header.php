@@ -64,7 +64,7 @@
                         <a href="nosso-portfolio.php">Portfólio</a>
                     </li> 
                     <li>
-                        <a href="contato.php">Contato</a>
+                        <a href="#">Contato</a>
                     </li>                                                          
                 </ul>
             </nav>

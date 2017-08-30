@@ -10,7 +10,7 @@
     {
         width: 100%;
         position: absolute;
-        bottom: 30%;
+        bottom: 33%;
         left: 0;
         z-index: 20;
 
@@ -20,13 +20,13 @@
             background: rgba(255,255,255,0.8);
             border-left: 10px solid $colorDestaque;
             width: 650px;
-            padding: 25px;
+            padding: 15px 25px;
         }
 
         .conteudo-slide 
         {
             background-color: #fff;
-            background: rgba(255,255,255,0.8);            
+            background: rgba(255,255,255,0.95);            
             padding: 10px 20px 10px 40px;
             width: 650px;
             margin-top: 20px;
@@ -38,7 +38,7 @@
             font-family: $secondaryFont;
             font-size: $fontSizeBase * 4;
             font-weight: $fontWeightSemiBold;
-            line-height: 1em;
+            line-height: 1.2em;
             margin: 0;
         }
 

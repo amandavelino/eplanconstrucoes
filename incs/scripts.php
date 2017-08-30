@@ -9,7 +9,7 @@
             autoplayHoverPause: true,
             smartSpeed: 500,
             items: 1,
-            nav: true,
+            nav: false,
             dots: true,
             navText: ['<i class="fa fa-chevron-left fa-3x" aria-hidden="true"></i>','<i class="fa fa-chevron-right fa-3x" aria-hidden="true"></i>'],
             loop: true,

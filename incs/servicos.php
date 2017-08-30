@@ -1,4 +1,4 @@
-<section class="sessao ss-center ss-servicos">
+<section class="sessao ss-servicos">
 
     <div class="container">
     
@@ -6,7 +6,7 @@
             <h2>Serviços</h2>
         </header>
 
-        <div class="ss-servicos-ct">
+        <div class="ss-ct ss-servicos-ct">
         
             <div class="ss-servicos-box">
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus sapien nunc eget.</p>

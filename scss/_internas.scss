@@ -1,0 +1,70 @@
+.hd-internas
+{
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+
+    h2 
+    {
+        color: $colorDestaque;
+        font-family: $secondaryFont;
+        font-size: $fontSizeBase * 3;
+        font-weight: $fontWeightSemiBold;
+        line-height: 1.5em;
+        margin: 0;
+        padding: 0;
+    }
+
+}
+
+.ss-internas
+{
+    padding-bottom: 0;
+
+    .ss-header 
+    {
+        text-align: left;
+        padding: 40px 0 30px;
+
+        h2 
+        {
+            &::after 
+            {
+                left: 0;
+                margin-left: 0;
+            }
+        }
+
+    }
+
+    .ss-box-ct 
+    {
+        @include make-lg-column(6);
+
+        img 
+        {
+            max-width: 100%;
+        }
+
+    }
+
+    &.ss-destaque 
+    {
+        margin: 30px 0 0;
+        padding-bottom: 40px;
+    }
+
+}
+
+//Nossa Empresa
+
+.pg-nossa-empresa
+{
+
+    .hd-internas
+    {
+        background: url("../imgs/bg-nossa-empresa.jpg") no-repeat center center;
+    }
+
+}

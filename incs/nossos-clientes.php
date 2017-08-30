@@ -1,4 +1,4 @@
-<section class="sessao ss-center ss-nossos-clientes">
+<section class="sessao no-pd ss-center ss-nossos-clientes">
 
     <div class="container">
         <header class="ss-header">

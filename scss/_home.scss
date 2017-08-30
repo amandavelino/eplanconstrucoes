@@ -31,8 +31,8 @@
 
     .ss-destaque
     {
-        margin: 30px 0;
-        padding: 20px 0 30px;
+        margin: 0;
+        padding: 50px 0;
     }
 
     .ss-destaque-servicos
@@ -68,6 +68,11 @@
         @include make-lg-column(3);
         padding: 0;
         margin-bottom: 30px;
+    }
+
+    .ss-trabalhos-ct
+    {
+        padding: 20px 0 0;
     }
 
 //Sessão Nossos Clientes

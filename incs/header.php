@@ -26,7 +26,7 @@
 
             <div class="left">
                 <h1 class="sr-only">Eplan Construções</h1>
-                <a href="#" title="Eplan Construções">
+                <a href="index.php" title="Eplan Construções">
                     <img class="logo" src="./imgs/logo.svg" border="0">
                 </a>            
             </div>
@@ -55,16 +55,16 @@
             <nav class="nav-desktop">
                 <ul>
                     <li>
-                        <a href="#">Página Inicial</a>
+                        <a href="index.php">Página Inicial</a>
                     </li>
                     <li>
-                        <a href="#">Nossa Empresa</a>
+                        <a href="nossa-empresa.php">Nossa Empresa</a>
                     </li> 
                     <li>
-                        <a href="#">Portfólio</a>
+                        <a href="portfolio.php">Portfólio</a>
                     </li> 
                     <li>
-                        <a href="#">Contato</a>
+                        <a href="contato.php">Contato</a>
                     </li>                                                          
                 </ul>
             </nav>

@@ -14,13 +14,28 @@
         left: 0;
         z-index: 20;
 
+        @include breakpoint(max-width ($largeDesktop - 1))
+        {
+            bottom: 27%;
+        }   
+        
+        @include breakpoint($allCelular)
+        {
+            bottom: 10%;
+        }           
+
         .titulo-slide 
         {
             background-color: #fff;
             background: rgba(255,255,255,0.8);
             border-left: 10px solid $colorDestaque;
             width: 650px;
+            max-width: 100%;
             padding: 15px 25px;
+
+            @include breakpoint($allCelular){
+                padding: 10px;
+            }              
         }
 
         .conteudo-slide 
@@ -29,7 +44,11 @@
             background: rgba(255,255,255,0.95);            
             padding: 10px 20px 10px 40px;
             width: 650px;
+            max-width: 100%;
             margin-top: 20px;
+            @include breakpoint($allCelular){
+                padding: 10px 15px;
+            }            
         }
 
         h2 
@@ -40,6 +59,15 @@
             font-weight: $fontWeightSemiBold;
             line-height: 1.2em;
             margin: 0;
+
+            @include breakpoint(max-width ($largeDesktop - 1)){
+                font-size: $fontSizeBase * 3;
+            } 
+            
+            @include breakpoint($allCelular){
+                font-size: $fontSizeBase * 2.2;
+            }             
+
         }
 
         p 
@@ -49,6 +77,11 @@
             font-size: $fontSizeBase * 2;
             line-height: 1.2em;
             margin: 0;
+
+            @include breakpoint(max-width ($largeDesktop - 1)){
+                font-size: $fontSizeBase * 1.5;
+            }               
+
         }
 
     }
@@ -56,9 +89,19 @@
     .owl-home
     {
 
+        .owl-item
+        {
+            img 
+            {
+                @include breakpoint($allCelular){
+                    width: auto;
+                    height: 300px;
+                }
+            }
+        }
+
         .owl-nav
         {
-            width: 1170px;
             margin: -88px auto 0;
             position: relative;
             overflow: hidden;
@@ -66,6 +109,27 @@
             padding: 40px 0;
             z-index: 10;
             bottom: 0;
+
+            @include breakpoint($largeDesktop)
+            {
+                width: 1170px;
+            }   
+            
+            @include breakpoint($allDesktop)
+            {
+                width: 970px;
+            } 
+            
+            @include breakpoint($celular)
+            {
+                width: 750px;
+            }   
+            
+            @include breakpoint($allCelular)
+            {
+                width: 90%;
+            }
+
         }
 
         .owl-next, .owl-prev 
@@ -90,10 +154,29 @@
         {
             position: relative;
             text-align: center;
-            width: 1110px;
             margin: -40px auto 0;
             z-index: 9999;
             height: 40px;
+
+            @include breakpoint($largeDesktop)
+            {
+                width: 1110px;
+            }   
+            
+            @include breakpoint($allDesktop)
+            {
+                width: 910px;
+            } 
+            
+            @include breakpoint($celular)
+            {
+                width: 690px;
+            }   
+            
+            @include breakpoint($allCelular)
+            {
+                width: 70%;
+            }
 
             .owl-dot 
             {

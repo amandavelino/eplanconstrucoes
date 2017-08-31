@@ -4,6 +4,11 @@
     -moz-osx-font-smoothing: grayscale;    
 }
 
+// body, html, .ss-wrapper, main, .ss-slider-home 
+// {
+//     height: 100%;
+// }
+
 body 
 {
     color: $primaryColor;
@@ -31,6 +36,19 @@ p
     font-weight: $fontWeightNormal;
     line-height: 1.7em;
     margin: 0 0 25px 0;
+
+    @include breakpoint(max-width ($largeDesktop - 1))
+    {
+        font-size: $fontSizeBase * 1.5;
+    }     
+}
+
+main 
+{
+    @include breakpoint($allCelular)
+    {
+        padding-top: 144px;
+    }        
 }
 
 //Classes em Geral
@@ -50,10 +68,20 @@ p
         outline: none;
         transition: $transitionAll;
 
+        @include breakpoint(max-width ($largeDesktop - 1))
+        {
+            font-size: $fontSizeBase * 1.8;
+        }   
+
         &.btn-no-bg 
         {
             border: 3px solid $colorDestaque;
             font-size: $fontSizeBase * 1.8;
+
+            @include breakpoint(max-width ($largeDesktop - 1))
+            {
+                font-size: $fontSizeBase * 1.6;
+            }  
 
             &:hover,
             &:focus 
@@ -107,6 +135,10 @@ p
         padding: 30px 0;
         overflow: hidden;
 
+        @include breakpoint(max-width ($largeDesktop - 1)){
+            padding: 15px 0;
+        }
+
         &.no-pd
         {
             padding: 0;
@@ -129,6 +161,11 @@ p
             margin: 0;
             padding: 0;
             position: relative;
+
+            @include breakpoint(max-width ($largeDesktop - 1))
+            {
+                font-size: $fontSizeBase * 2.7;
+            }  
 
             &::after 
             {
@@ -181,7 +218,13 @@ p
             height: 100px; //adicionar um height
             display: flex;
             align-items: center;
-            justify-content: center;        
+            justify-content: center;    
+            
+            @include breakpoint(max-width ($largeDesktop - 1))
+            {
+                margin: 10px 9px;
+            }            
+
         }
 
     }

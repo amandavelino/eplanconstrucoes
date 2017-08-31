@@ -3,6 +3,8 @@
     .ss-servicos-box 
     {
         @include make-lg-column(6);
+        @include make-md-column(6);
+        @include make-sm-column(6);
     }
 
     .lista-servicos
@@ -19,12 +21,18 @@
             margin: 0 2.5% 30px;
             padding: 0;
             width: 45%;
+            text-align: center;
+
+            @include breakpoint($tablet)
+            {
+                margin: 0 0 30px;
+                width: 100%;
+            } 
 
             img 
             {
                 max-width: 100%;
             }
-
         }
 
     }
@@ -33,6 +41,11 @@
     {
         margin: 0;
         padding: 50px 0;
+
+        @include breakpoint(max-width ($largeDesktop - 1))
+        {
+            padding: 30px 0;
+        } 
     }
 
     .ss-destaque-servicos
@@ -43,11 +56,21 @@
     .ss-destaque-servico
     {
         @include make-lg-column(3);
+        @include make-md-column(3);
+        @include make-sm-column(6);
         margin-bottom: 15px;
 
         header 
         {
             padding: 0 0 10px 0;
+
+            img 
+            {
+                @include breakpoint(max-width ($largeDesktop - 1)){
+                    width: 95px;
+                }                        
+            }
+
         }
 
         h3 
@@ -57,6 +80,11 @@
             line-height: 1.5em;
             margin: 0;
             padding: 0;
+
+            @include breakpoint(max-width ($largeDesktop - 1))
+            {
+                font-size: $fontSizeBase * 1.8;
+            } 
         }
 
     }
@@ -66,6 +94,8 @@
     .ss-trabalho-box
     {
         @include make-lg-column(3);
+        @include make-md-column(3);
+        @include make-sm-column(3);
         padding: 0;
         margin-bottom: 30px;
     }
@@ -89,6 +119,10 @@
         img 
         {
             max-width: 170px;
+            @include breakpoint(max-width ($largeDesktop - 1))
+            {
+                width: 75%;
+            } 
         }
     }
 

@@ -27,7 +27,7 @@
             <div class="ss-footer-box">
 
                 <header>
-                    <h4>Entre em contato agora</h4>
+                    <h4>Entre agora em contato</h4>
                 </header>
 
                 <form action="#" class="form-footer">

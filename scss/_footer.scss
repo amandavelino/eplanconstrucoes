@@ -23,6 +23,8 @@
     .ss-footer-box
     {
         @include make-lg-column(4);
+        @include make-md-column(4);
+        @include make-sm-column(4);
         padding-top: 100px;
     
         header 
@@ -37,6 +39,11 @@
                 line-height: 1.2em;
                 margin: 0;
                 padding: 0;
+
+                @include breakpoint(max-width ($largeDesktop - 1)){
+                    font-size: $fontSizeBase * 2.1;
+                }  
+
             }
         }
     }

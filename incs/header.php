@@ -41,7 +41,14 @@
                     </div><!-- hgroup -->  
                 </div><!-- box-info-contato -->        
             </div>
-            <!-- right -->            
+            <!-- right -->   
+            
+            <button type="button" id="menu-mobile">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
 
         </div>
         <!-- container -->
@@ -64,7 +71,30 @@
                         <a href="nosso-portfolio.php">Portfólio</a>
                     </li> 
                     <li>
-                        <a href="#">Contato</a>
+                        <a class="contato-link" href="#">Contato</a>
+                    </li>                                                          
+                </ul>
+            </nav>
+            <!-- nav-desktop -->
+
+            <?php
+                //Nav Mobile... tive que usar uma estrutura diferente do boostrap...
+                //portanto o mobile vai carregar a mesma estrutura..
+                //mas a classe ao invés de nav-desktop será nav-mobile 
+            ?>
+            <nav class="nav-mobile">
+                <ul>
+                    <li>
+                        <a href="index.php">Página Inicial</a>
+                    </li>
+                    <li>
+                        <a href="nossa-empresa.php">Nossa Empresa</a>
+                    </li> 
+                    <li>
+                        <a href="nosso-portfolio.php">Portfólio</a>
+                    </li> 
+                    <li>
+                        <a class="contato-link" href="#">Contato</a>
                     </li>                                                          
                 </ul>
             </nav>

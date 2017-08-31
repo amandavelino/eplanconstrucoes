@@ -6,6 +6,7 @@
  
 $colorDestaque: #f48245;
 $colorFooter : #fef7f3;
+$colorIconMobile: #252525;
 
 //Background Colors
 $bgColorPrimary: $colorDestaque;
@@ -37,6 +38,7 @@ $transitionAll: all .5s ease-in-out;
     $tablet: 768px 991px; //tablets portrait: 
 
     //Celular
+    $celular: 768px;
     $allCelular: 0 767px; // todos os dispositivos móveis < 768px
     $largeCelular: 481 767px;
     $smallCelular: 0 480px; 

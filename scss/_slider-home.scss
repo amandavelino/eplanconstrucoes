@@ -9,6 +9,7 @@
     .legenda 
     {
         width: 100%;
+        text-align: left;
         position: absolute;
         bottom: 33%;
         left: 0;
@@ -21,8 +22,13 @@
         
         @include breakpoint($allCelular)
         {
-            bottom: 10%;
+            bottom: 15%;
         }           
+
+        @include breakpoint($smallCelular)
+        {
+            bottom: 25%;
+        }  
 
         .titulo-slide 
         {
@@ -33,8 +39,11 @@
             max-width: 100%;
             padding: 15px 25px;
 
-            @include breakpoint($allCelular){
+            @include breakpoint($allCelular)
+            {
+                border-left-width: 6px;
                 padding: 10px;
+                width: 300px;
             }              
         }
 
@@ -46,8 +55,17 @@
             width: 650px;
             max-width: 100%;
             margin-top: 20px;
-            @include breakpoint($allCelular){
+
+            @include breakpoint($allCelular)
+            {
                 padding: 10px 15px;
+                margin-top: 10px;
+                width: 300px;
+            }
+            
+            @include breakpoint($smallCelular)
+            {
+                display: none;
             }            
         }
 
@@ -64,8 +82,9 @@
                 font-size: $fontSizeBase * 3;
             } 
             
-            @include breakpoint($allCelular){
-                font-size: $fontSizeBase * 2.2;
+            @include breakpoint($allCelular)
+            {
+                font-size: $fontSizeBase * 1.8;
             }             
 
         }
@@ -91,12 +110,11 @@
 
         .owl-item
         {
+            text-align: center;
             img 
             {
-                @include breakpoint($allCelular){
-                    width: auto;
-                    height: 300px;
-                }
+                margin: 0 auto;
+                max-width: 100%;
             }
         }
 
@@ -176,6 +194,8 @@
             @include breakpoint($allCelular)
             {
                 width: 70%;
+                height: 25px;
+                margin-top: -25px;
             }
 
             .owl-dot 

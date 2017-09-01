@@ -17,34 +17,34 @@
         
             <ul class="lista-itens lista-clientes">
                 <li>
-                    <img src="./imgs/temp/cliente-01.png" alt="">
+                    <img src="./imgs/temp/cliente-01.png" width="160">
                 </li>
                 <li>
-                    <img src="./imgs/temp/cliente-02.png" alt="">
+                    <img src="./imgs/temp/cliente-02.png" width="160">
                 </li>                
                 <li>
-                    <img src="./imgs/temp/cliente-03.png" alt="">
+                    <img src="./imgs/temp/cliente-03.png" width="160">
                 </li>                
                 <li>
-                    <img src="./imgs/temp/cliente-04.png" alt="">
+                    <img src="./imgs/temp/cliente-04.png" width="160">
                 </li>     
                 <li>
-                    <img src="./imgs/temp/cliente-05.png" alt="">
+                    <img src="./imgs/temp/cliente-05.png" width="160">
                 </li>   
                 <li>
-                    <img src="./imgs/temp/cliente-06.png" alt="">
+                    <img src="./imgs/temp/cliente-06.png" width="160">
                 </li>
                 <li>
-                    <img src="./imgs/temp/cliente-07.png" alt="">
+                    <img src="./imgs/temp/cliente-07.png" width="160">
                 </li>                
                 <li>
-                    <img src="./imgs/temp/cliente-08.png" alt="">
+                    <img src="./imgs/temp/cliente-08.png" width="160">
                 </li>                
                 <li>
-                    <img src="./imgs/temp/cliente-01.png" alt="">
+                    <img src="./imgs/temp/cliente-01.png" width="160">
                 </li>     
                 <li>
-                    <img src="./imgs/temp/cliente-02.png" alt="">
+                    <img src="./imgs/temp/cliente-02.png" width="160">
                 </li>                                                
             </ul>
 

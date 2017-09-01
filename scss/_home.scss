@@ -2,9 +2,17 @@
 
     .ss-servicos-box 
     {
-        @include make-lg-column(6);
-        @include make-md-column(6);
         @include make-sm-column(6);
+        @include make-md-column(6);
+        @include make-lg-column(6);
+        @include breakpoint(max-width ($allDesktop - 1))
+        {
+            text-align: justify;
+        }
+        @include breakpoint($smallCelular)
+        {
+            text-align: center;
+        }           
     }
 
     .lista-servicos
@@ -15,23 +23,32 @@
         padding: 0;
         list-style: none;
 
+        @include breakpoint(max-width ($largeDesktop - 1))
+        {
+            margin: 0 auto;
+        } 
+
         li 
         {
             float: left;
-            margin: 0 2.5% 30px;
+            margin: 0 2.5% 25px;
             padding: 0;
             width: 45%;
             text-align: center;
 
-            @include breakpoint($tablet)
+            @include breakpoint(max-width $allDesktop)
             {
-                margin: 0 0 30px;
-                width: 100%;
-            } 
+                margin-bottom: 20px;
+            }
+
+            @include breakpoint($smallCelular)
+            {
+                margin-bottom: 15px;
+            }           
 
             img 
             {
-                max-width: 100%;
+                max-width: 100%;                
             }
         }
 
@@ -50,15 +67,26 @@
 
     .ss-destaque-servicos
     {
-        background: url("../imgs/bg-destaque-servicos.jpg") no-repeat center center;
+        background: url("../imgs/bg-destaque-servicos.jpg") no-repeat top center;
+        @include breakpoint($allCelular)
+        {
+            background-size: cover;
+        } 
+
     }
 
     .ss-destaque-servico
     {
-        @include make-lg-column(3);
-        @include make-md-column(3);
         @include make-sm-column(6);
+        @include make-md-column(3);        
+        @include make-lg-column(3);
         margin-bottom: 15px;
+
+        @include breakpoint($allCelular)
+        {
+            margin-bottom: 40px;
+            padding: 0 40px;
+        } 
 
         header 
         {
@@ -84,7 +112,13 @@
             @include breakpoint(max-width ($largeDesktop - 1))
             {
                 font-size: $fontSizeBase * 1.8;
-            } 
+            }
+
+            @include breakpoint($allCelular)
+            {
+                font-size: $fontSizeBase * 2.3;
+            }
+
         }
 
     }
@@ -93,23 +127,27 @@
 
     .ss-trabalho-box
     {
-        @include make-lg-column(3);
-        @include make-md-column(3);
         @include make-sm-column(3);
+        @include make-md-column(3);
+        @include make-lg-column(3);
         padding: 0;
-        margin-bottom: 30px;
+        margin-bottom: 5px;
     }
 
     .ss-trabalhos-ct
     {
         padding: 20px 0 0;
+        @include breakpoint($allCelular)
+        {
+            padding-top: 10px;
+        }        
     }
 
 //Sessão Nossos Clientes
 
     .ss-destaque-clientes
     {
-        background: url("../imgs/bg-nossos-clientes.jpg") no-repeat center center;
+        background: url("../imgs/bg-nossos-clientes.jpg") repeat top center;
         margin: 10px 0;
     }
 
@@ -118,10 +156,11 @@
     {
         img 
         {
-            max-width: 170px;
-            @include breakpoint(max-width ($largeDesktop - 1))
+            //max-width: 170px;
+            max-width: 100%;
+            @include breakpoint($allCelular)
             {
-                width: 75%;
+                width: 130px;
             } 
         }
     }

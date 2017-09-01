@@ -10,19 +10,19 @@
         
             <ul class="lista-itens lista-parceiros">
                 <li>
-                    <img src="./imgs/temp/parceiro-01.png" alt="">
+                    <img src="./imgs/temp/parceiro-01.png" width="150">
                 </li>
                 <li>
-                    <img src="./imgs/temp/parceiro-02.png" alt="">
+                    <img src="./imgs/temp/parceiro-02.png" width="150">
                 </li>                
                 <li>
-                    <img src="./imgs/temp/parceiro-03.png" alt="">
+                    <img src="./imgs/temp/parceiro-03.png" width="150">
                 </li>                
                 <li>
-                    <img src="./imgs/temp/parceiro-01.png" alt="">
+                    <img src="./imgs/temp/parceiro-01.png" width="150">
                 </li>  
                 <li>
-                    <img src="./imgs/temp/parceiro-02.png" alt="">
+                    <img src="./imgs/temp/parceiro-02.png" width="150">
                 </li>                                                                    
             </ul>
 

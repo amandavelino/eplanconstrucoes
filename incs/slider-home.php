@@ -5,7 +5,7 @@
         <div class="owl-carousel owl-theme owl-home">
 
             <div class="item">
-                <img src="./imgs/temp/bn-01.jpg" border="0">
+                <img src="./imgs/temp/bn-mn-01.jpg" border="0">
 
                 <div class="legenda">
 
@@ -29,7 +29,7 @@
             <!-- end .item -->  
 
             <div class="item">
-                <img src="./imgs/temp/bn-01.jpg" border="0">
+                <img src="./imgs/temp/bn-mn-01.jpg" border="0">
 
                 <div class="legenda">
 

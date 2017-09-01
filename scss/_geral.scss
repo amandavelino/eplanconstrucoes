@@ -40,6 +40,7 @@ p
     @include breakpoint(max-width ($largeDesktop - 1))
     {
         font-size: $fontSizeBase * 1.5;
+        line-height: 1.6em;
     }     
 }
 
@@ -77,6 +78,7 @@ main
         {
             border: 3px solid $colorDestaque;
             font-size: $fontSizeBase * 1.8;
+            margin-top: 20px;
 
             @include breakpoint(max-width ($largeDesktop - 1))
             {
@@ -135,9 +137,15 @@ main
         padding: 30px 0;
         overflow: hidden;
 
-        @include breakpoint(max-width ($largeDesktop - 1)){
+        @include breakpoint(max-width ($largeDesktop - 1))
+        {
             padding: 15px 0;
         }
+
+        @include breakpoint($allCelular)
+        {
+            padding: 0 0 30px;
+        }        
 
         &.no-pd
         {
@@ -152,6 +160,11 @@ main
         text-align: center;
         position: relative;
 
+        @include breakpoint($allCelular)
+        {
+            padding: 30px 0 20px;
+        } 
+
         h2 
         {
             font-family: $secondaryFont;
@@ -164,7 +177,8 @@ main
 
             @include breakpoint(max-width ($largeDesktop - 1))
             {
-                font-size: $fontSizeBase * 2.7;
+                font-size: $fontSizeBase * 2.6;
+                //line-height: 1.7em;
             }  
 
             &::after 
@@ -210,20 +224,37 @@ main
 
         li 
         {
-            float: left;
-            margin: 30px;
+            //float: left;
+            margin: 30px 1%;
             list-style: none;
         
             //centralizando verticalmente
             height: 100px; //adicionar um height
-            display: flex;
+            //display: flex;
+            display: inline-block;
             align-items: center;
-            justify-content: center;    
+            justify-content: center; 
+            //width: 18%;
             
             @include breakpoint(max-width ($largeDesktop - 1))
             {
-                margin: 10px 9px;
+                margin: 10px 1%;
             }            
+
+            @include breakpoint(max-width $allDesktop)
+            {
+                //width: 23%;
+            }
+
+            @include breakpoint($allCelular)
+            {
+                //width: 31.3333%;
+            }   
+            
+            @include breakpoint($smallCelular)
+            {
+                //width: 48%;
+            }               
 
         }
 

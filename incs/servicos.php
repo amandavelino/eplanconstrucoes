@@ -19,19 +19,19 @@
                 <ul class="lista-servicos">
 
                     <li>
-                        <img src="http://via.placeholder.com/260x170" width="260" border="0" alt="Nome do Serviço...">
+                        <img src="http://via.placeholder.com/400x250" width="400" border="0" alt="Nome do Serviço...">
                     </li>
                     
                     <li>
-                        <img src="http://via.placeholder.com/260x170" width="260" border="0" alt="Nome do Serviço...">
+                        <img src="http://via.placeholder.com/400x250" width="400" border="0" alt="Nome do Serviço...">
                     </li>
 
                     <li>
-                        <img src="http://via.placeholder.com/260x170" width="260" border="0" alt="Nome do Serviço...">
+                        <img src="http://via.placeholder.com/400x250" width="400" border="0" alt="Nome do Serviço...">
                     </li>
 
                     <li>
-                        <img src="http://via.placeholder.com/260x170" width="260" border="0" alt="Nome do Serviço...">
+                        <img src="http://via.placeholder.com/400x250" width="400" border="0" alt="Nome do Serviço...">
                     </li>                    
 
                 </ul>

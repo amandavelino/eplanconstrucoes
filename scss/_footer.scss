@@ -3,6 +3,11 @@
     background: $colorDestaque;
     padding: 50px 0 20px;
 
+    @include breakpoint($allCelular)
+    {
+        padding-top: 0;
+    }
+
     * 
     {
         color: $secondaryColor;
@@ -22,16 +27,34 @@
 
     .ss-footer-box
     {
-        @include make-lg-column(4);
-        @include make-md-column(4);
-        @include make-sm-column(4);
+        //@include make-sm-column(4);
+        //@include make-md-column(4);
+        //@include make-lg-column(4);
+        padding: 0 15px;
+        width: 33.3333%;
+        float: right;
+        position: relative;
         padding-top: 100px;
     
+        @include breakpoint($allCelular)
+        {
+            width: 90%;
+            float: none;
+            padding: 20px 0;
+            margin: 0 auto;
+            overflow: hidden;
+        } 
+
         header 
         {
             padding: 20px 0;
             margin-top: -68px;
     
+            @include breakpoint($allCelular)
+            {
+                margin-top: 0;
+            }
+
             h4 
             {
                 font-family: $secondaryFont;
@@ -68,6 +91,13 @@
     {
         position: absolute;
         top: 0;
+    
+        @include breakpoint($allCelular)
+        {
+            position: relative;
+            margin-bottom: 30px;
+        }
+
     }
     
     //Formulario

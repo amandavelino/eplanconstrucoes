@@ -45,6 +45,14 @@
             overflow: hidden;
         } 
 
+        &.mapa-box 
+        {
+            @include breakpoint($allCelular)
+            {
+                display: none;
+            }            
+        }
+
         header 
         {
             padding: 20px 0;

@@ -5,6 +5,16 @@
     align-items: center;
     justify-content: center; 
 
+    @include breakpoint(max-width ($allDesktop - 1))
+    {
+        height: 150px;
+    } 
+
+    @include breakpoint($allCelular)
+    {
+        height: 100px;
+    }     
+
     h2 
     {
         color: $colorDestaque;
@@ -22,10 +32,20 @@
 {
     padding-bottom: 0;
 
+    @include breakpoint($allCelular)
+    {
+        text-align: center;
+    }
+
     .ss-header 
     {
         text-align: left;
         padding: 40px 0 30px;
+
+        @include breakpoint($allCelular)
+        {
+            text-align: center;
+        }
 
         h2 
         {
@@ -33,6 +53,13 @@
             {
                 left: 0;
                 margin-left: 0;
+
+                @include breakpoint($allCelular)
+                {
+                    left: 50%;
+                    margin-left: -50px;
+                }
+
             }
         }
 
@@ -57,6 +84,13 @@
                 left: 0;
                 bottom: 0;
                 margin-left: 0;
+            
+                @include breakpoint($allCelular)
+                {
+                    left: 50%;
+                    margin-left: -50px;
+                }                
+
             }
 
         }           
@@ -65,11 +99,14 @@
 
     .ss-box-ct 
     {
+        @include make-sm-column(6);
+        @include make-md-column(6);
         @include make-lg-column(6);
 
         img 
         {
             max-width: 100%;
+            margin-bottom: 40px;
         }
 
     }
@@ -130,17 +167,27 @@
     .ss-item 
     {
         float: left;
-        width: 24.65%;
+        width: 24.5%;
         padding: 0;
-        margin: 2px;
-        //margin-bottom: 4px;
+        margin: 1px;
         list-style: none;
+       
+        @include breakpoint($allCelular)
+        {
+            width: 32.95%;
+        } 
+ 
+        @include breakpoint($smallCelular)
+        {
+            width: 100%;
+            margin-left: 0;
+            margin-right: 0;
+        }         
 
         img 
         {
             max-width: 100%;
         }
-
     }
 
 }

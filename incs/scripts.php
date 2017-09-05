@@ -6,6 +6,22 @@
 <script type="text/javascript" src="./js/spinners/spinners.min.js"></script>
 <script type="text/javascript" src="./js/lightview/lightview.js"></script>
 <script>
+
+    var menu_mobile = $(".nav-mobile"),
+    menuAtivo = "menu-ativo";
+
+    function openMenu()
+    {
+        menu_mobile.addClass(menuAtivo);
+        menu_mobile.stop().animate({ height: "155px" }, 500, "easeInOutQuart");
+    }
+    
+    function closeMenu()
+    {
+        menu_mobile.removeClass(menuAtivo);
+        menu_mobile.stop().animate({ height: 0 }, 500, "easeInOutQuart");
+    }//
+
     $(document).ready(function(){ 
 
         function goToSessao(e){
@@ -31,6 +47,7 @@
         $(".contato-link").on("click", function(){
 
             goToSessao("#ft-principal");
+            closeMenu();
             return false;
 
         });//
@@ -38,22 +55,15 @@
         //Menu Mobile
         $("#menu-mobile").on("click", function(){
 
-            var menu_mobile = $(".nav-mobile"),
-            menuAtivo = "menu-ativo";
-
             //Animação do Menu
             if(!menu_mobile.hasClass(menuAtivo))
             {
-                menu_mobile.addClass(menuAtivo);
-                menu_mobile.stop().animate({ height: "155px" }, 500, "easeInQuart");
+                openMenu();
             }else
             {
-                menu_mobile.removeClass(menuAtivo);
-                menu_mobile.stop().animate({ height: 0 }, 500, "easeOutQuart");
+                closeMenu();
             }//end if
-            
             return false;
-
         });//
 
     });//

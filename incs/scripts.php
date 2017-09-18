@@ -30,7 +30,8 @@
         }//goToSessao
 
         $('.owl-home').owlCarousel({
-            autoplay: true,
+            //autoWidth:true,
+            autoplay: false,
             autoplayTimeout: 7000,
             autoplayHoverPause: true,
             center: true,
@@ -39,7 +40,7 @@
             nav: false,
             dots: true,
             navText: ['<i class="fa fa-chevron-left fa-3x" aria-hidden="true"></i>','<i class="fa fa-chevron-right fa-3x" aria-hidden="true"></i>'],
-            loop: true,
+            loop: false,
             margin: 0
         });
 

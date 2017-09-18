@@ -27,8 +27,11 @@
 
         @include breakpoint($smallCelular)
         {
-            bottom: 25%;
         }  
+
+        @include breakpoint(380px 0)
+        {
+        }          
 
         .titulo-slide 
         {
@@ -39,12 +42,23 @@
             max-width: 100%;
             padding: 15px 25px;
 
+            @include breakpoint($smallDesktop)
+            {
+               width: 500px;
+            } 
+
+            @include breakpoint($tablet)
+            {
+               width: 450px;
+            } 
+
             @include breakpoint($allCelular)
             {
-                border-left-width: 6px;
+                border-left-width: 5px;
                 padding: 10px;
-                width: 300px;
-            }              
+                width: 400px;
+            }           
+
         }
 
         .conteudo-slide 
@@ -56,16 +70,25 @@
             max-width: 100%;
             margin-top: 20px;
 
+            @include breakpoint($smallDesktop)
+            {
+               width: 500px;
+            } 
+
+            @include breakpoint($tablet)
+            {
+               width: 450px;
+            } 
+
             @include breakpoint($allCelular)
             {
                 padding: 10px 15px;
                 margin-top: 10px;
-                width: 300px;
+                width: 400px;
             }
             
             @include breakpoint($smallCelular)
             {
-                display: none;
             }            
         }
 
@@ -78,13 +101,17 @@
             line-height: 1.2em;
             margin: 0;
 
-            @include breakpoint(max-width ($largeDesktop - 1)){
+            @include breakpoint($smallDesktop){
                 font-size: $fontSizeBase * 3;
             } 
             
+            @include breakpoint($tablet){
+                font-size: $fontSizeBase * 2.5;
+            } 
+
             @include breakpoint($allCelular)
             {
-                font-size: $fontSizeBase * 1.8;
+                font-size: $fontSizeBase * 2.2;
             }             
 
         }
@@ -111,10 +138,45 @@
         .owl-item
         {
             text-align: center;
+            position: relative;
+
+            .item 
+            {
+                text-align: center;
+                width: 100%;
+                position: relative;
+            }
+
             img 
             {
                 margin: 0 auto;
                 max-width: 100%;
+
+                @include breakpoint($especialCelular)
+                {
+                    width: auto;
+                    max-width: initial;
+                    height: 400px;
+                }
+
+                &.dsk-768
+                {
+                    display: block;
+                    @include breakpoint($especialCelular)
+                    {
+                        display: none;
+                    }
+                }
+
+                &.mb-767 
+                {
+                    display: none;
+                    @include breakpoint($especialCelular)
+                    {
+                        display: block;
+                    }
+                }             
+
             }
         }
 
